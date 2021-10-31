@@ -30,7 +30,6 @@ void merge(struct Array arr1,struct Array arr2,struct Array *arr3){
 
         }
    }
-   for(;i<arr)
 
 
 

@@ -15,7 +15,6 @@ return i+k;
 }
 
 int multiplee(struct arr a){
-
 int i=0,count=0;
 int k=a.array[0]-i;
     printf("Missing element is : ");
@@ -63,4 +62,6 @@ int main()
 }
 
 /*for multiple elements, the time complexity is order (n) but for hashing though we require a lot of space the time complexity if o(n) since we are scanning it only once;
+
+using the hash, the time complexity of the hash is order(n) again since only once we are scanning through the entire array
 */
