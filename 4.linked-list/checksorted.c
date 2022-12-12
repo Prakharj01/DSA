@@ -14,6 +14,7 @@ first->next=NULL;
 last=first;
 
 
+
 for(int i=1;i<n;i++){
     temp=(struct node *)malloc(sizeof(struct node));
     temp->data=a[i];
