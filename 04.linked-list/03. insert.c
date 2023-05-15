@@ -22,7 +22,6 @@ for(int i=1;i<n;i++){
     last=temp;
 }
 }
-
 void display(){
 struct node *temp;
 temp=first;

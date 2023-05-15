@@ -5,6 +5,16 @@ struct Node
     int data;
     struct Node *next;
 } *first = NULL;
+int count(struct Node *p)
+{
+    int l = 0;
+    while (p)
+    {
+        l++;
+        p = p->next;
+    }
+    return l;
+}
 void create(int A[], int n)
 {
     int i;
