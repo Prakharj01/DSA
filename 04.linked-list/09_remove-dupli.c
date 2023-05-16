@@ -49,7 +49,7 @@ void duplidelete(){
         }
         else{
         q=p;
-        temp=p->data;
+        temp=q->data;
         p=p->next;
         }
 
