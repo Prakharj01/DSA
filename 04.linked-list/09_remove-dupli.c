@@ -1,21 +1,21 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-struct node{
+struct Node{
 int data;
-struct node *next;
+struct Node *next;
 }*first=NULL;
 
 void create(int a[],int n){
-struct node *last, *temp;
-first=(struct node *)malloc(sizeof(struct node));
+struct Node *last, *temp;
+first=(struct Node *)malloc(sizeof(struct Node));
 first->data=a[0];
 first->next=NULL;
 last=first;
 
 
 for(int i=1;i<n;i++){
-    temp=(struct node *)malloc(sizeof(struct node));
+    temp=(struct Node *)malloc(sizeof(struct Node));
     temp->data=a[i];
     temp->next=NULL;
     last->next=temp;
@@ -24,7 +24,7 @@ for(int i=1;i<n;i++){
 }
 
 void display(){
-struct node *temp;
+struct Node *temp;
 temp=first;
 int count=1;
 
@@ -37,7 +37,7 @@ printf("%d",temp->data);
 printf("\nThe number of elements is %d. \n",count);
 }
 void duplidelete(){
-    struct node *p=first,*q;
+    struct Node *p=first,*q;
     int temp=p->data;
     q=p;
     p=p->next;
@@ -63,7 +63,7 @@ int main()
     create(a,8);
     display();
 
-    struct node *p=first;
+    struct Node *p=first;
     duplidelete();
     display();
     return 0;

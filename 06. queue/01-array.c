@@ -33,7 +33,7 @@ int dequeue(struct Queue *q)
         printf("Queue is Empty\n");
     else
     {
-        q->front++;
+        q->front+=1;
         x = q->Q[q->front];
     }
     return x;
@@ -53,6 +53,7 @@ int main()
     enqueue(&q, 20);
     enqueue(&q, 30);
     Display(q);
-    printf("%d ", dequeue(&q));
+    printf("Dequeued number is %d \n", dequeue(&q));
+    Display(q);
     return 0;
 }
